@@ -30,15 +30,6 @@ services:
       - db_data:/var/lib/postgresql/data
 
 
-  frontend:
-    build: ../horse_and-_travel
-    ports:
-      - "3000:3000"
-    volumes:
-      - .:/app/backend
-    depends_on:
-      - web
-
 
 
   nginx:
